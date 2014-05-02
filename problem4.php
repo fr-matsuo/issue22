@@ -19,16 +19,15 @@ for ($i = 0; $i < $length; $i++) {
 
 //foreachを使って配列のキー要素をすべて出力
 printf("All Keys\n");
-foreach ($array as $element) {
-    $key = array_search($element,$array);
+foreach ($array as $key => $element) {
     printf("key:%s\telement:%s\n", $key, $array[$key]);
 }
 
 //キーが奇数の行のみ抽出
 printf("Odd Elements\n");
-foreach ($array_keys as $key){ 
-    if((int)$key %2 == 1){
-        printf("%s\n", $array[$key]);
+foreach ($array as $key => $element){ 
+    if ((int)$key %2 == 1) {
+        printf("%s\n", $element);
     }
 }
 ?>
