@@ -25,7 +25,7 @@ foreach ($array as $key => $element) {
 
 //キーが奇数の行のみ抽出
 printf("Odd Elements\n");
-foreach ($array as $key => $element){ 
+foreach ($array as $key => $element) { 
     if ((int)$key %2 == 1) {
         printf("%s\n", $element);
     }

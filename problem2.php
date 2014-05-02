@@ -19,7 +19,7 @@ $randKey = array_rand($array);
 printf("Random Element:\n%s\n", $array[$randKey]);
 
 //ランダム順に出力
-$randArray=$array;
+$randArray = $array;
 shuffle($randArray);
 
 printf("Random Number:\n");
