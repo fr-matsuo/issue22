@@ -9,5 +9,7 @@ $ab_num     = substr_count($str, 'ab');
 $str_length = mb_strlen($str);
 
 //出力
-printf("a_num=%d\nab_num=%d\nstr_length=%d\n", $a_num, $ab_num, $str_length);
+printf("'a'\t:%d\n", $a_num);
+printf("'ab'\t:%d\n", $ab_num);
+printf("length\t:%d\n", $str_length);
 ?>
