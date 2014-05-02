@@ -11,21 +11,24 @@ $array_keys = array_keys($array);
 $length     = count($array_keys);
 
 //配列の要素をすべて出力
+printf("All Elements\n");
 for ($i = 0; $i < $length; $i++) {
     $key = $array_keys[$i];
     printf("array[%s]=%s\n", $key, $array[$key]);
 }
 
 //foreachを使って配列のキー要素をすべて出力
+printf("All Keys\n");
 foreach ($array as $element) {
     $key = array_search($element,$array);
     printf("key:%s\telement:%s\n", $key, $array[$key]);
 }
 
 //キーが奇数の行のみ抽出
+printf("Odd Elements\n");
 foreach ($array_keys as $key){ 
     if((int)$key %2 == 1){
-        printf("奇数要素：%s\n", $array[$key]);
+        printf("%s\n", $array[$key]);
     }
 }
 ?>
